@@ -8,8 +8,7 @@ export default {
 const Template = (_args, { argTypes }) => ({
   props: Object.keys(argTypes),
   components: { BOTWButton },
-  template:
-    '<BOTWButton @onClick="onClick" v-bind="$props">Button</BOTWButton>',
+  template: "<BOTWButton>Button</BOTWButton>",
 });
 
 export const Default = Template.bind({});
