@@ -1,12 +1,13 @@
 import BOTWCheckbox from "./BOTWCheckbox.vue";
+import { Meta, Story } from "@storybook/vue";
 
 export default {
   title: "BOTW/Checkbox",
   component: BOTWCheckbox,
-};
+} as Meta;
 
-const Template = (_args, { argTypes }) => ({
-  props: Object.keys(argTypes),
+const Template: Story = (_args, storyContext) => ({
+  props: Object.keys(storyContext.argTypes),
   components: { BOTWCheckbox },
   template: `<BOTWCheckbox></BOTWCheckbox>`,
 });
